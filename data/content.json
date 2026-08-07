@@ -1,0 +1,17 @@
+{
+  "projects": [
+    { "id": 1, "title": "Ascolto e orientamento", "description": "Informazioni chiare e accompagnamento per persone e famiglie.", "icon": "◎" },
+    { "id": 2, "title": "Autonomia e partecipazione", "description": "Esperienze inclusive per coltivare capacità, relazioni e desideri.", "icon": "↗" },
+    { "id": 3, "title": "Comunità e territorio", "description": "Progetti condivisi con scuole, enti, imprese e associazioni.", "icon": "✣" }
+  ],
+  "news": [
+    { "id": 1, "title": "Insieme, ogni passo conta", "summary": "Una giornata aperta per conoscere famiglie, professionisti e volontari della nostra rete.", "category": "Associazione", "date": "2026-07-28" },
+    { "id": 2, "title": "Diritti e progetto di vita", "summary": "Un incontro pubblico dedicato a percorsi personalizzati, partecipazione e inclusione.", "category": "Incontri", "date": "2026-07-12" },
+    { "id": 3, "title": "Una rete che cresce a Pisa", "summary": "Nuove collaborazioni con enti del Terzo Settore per risposte più vicine alle persone.", "category": "Reti", "date": "2026-06-24" }
+  ],
+  "documents": [
+    { "id": 1, "title": "Statuto dell'associazione", "type": "PDF", "url": "#" },
+    { "id": 2, "title": "Iscrizione al RUNTS", "type": "PDF", "url": "#" },
+    { "id": 3, "title": "Risorse pubbliche ricevute", "type": "PDF", "url": "#" }
+  ]
+}
