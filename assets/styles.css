@@ -733,30 +733,15 @@ footer {
 	color: var(--yellow);
 }
 
-.first-footer-bottom {
-	/*border-top: 1px solid #ffffff25;*/
-	margin-top: 50px;
-	padding-top: 22px;
-	display: flex;
-	justify-content: space-between;
-	font-size: 11px;
-	color: #ffffff99;
-}
-
 .footer-bottom {
 	display: flex;
-	/*border-top: 1px solid #ffffff25;*/
 	margin-top: 10px;
-	/*padding-top: 22px;*/
 	padding-top: 0px;
 	align-items: center;
 	justify-content: space-between;
 	font-size: 11px;
 	color: #ffffff99;
 }
-
-
-
 
 .footer-center-content {
 	list-style: none;
