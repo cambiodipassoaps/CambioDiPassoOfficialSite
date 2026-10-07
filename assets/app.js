@@ -9,8 +9,18 @@
       const response = await fetch('data/content.json');
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
-      $('#project-grid').innerHTML = data.projects.map((item, index) => `<article class="project-card"><div class="project-icon" aria-hidden="true">${escapeHtml(item.icon)}</div><span>0${index + 1}</span><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.description)}</p><a href="#contatti">Approfondisci →</a></article>`).join('');
-      $('#news-grid').innerHTML = data.news.map(item => `<article><div class="news-art" aria-hidden="true"><span>${escapeHtml(item.category)}</span></div><div class="news-meta"><span>${new Intl.DateTimeFormat('it-IT',{day:'2-digit',month:'long',year:'numeric'}).format(new Date(`${item.date}T12:00:00`))}</span><span>${escapeHtml(item.category)}</span></div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p><a href="#contatti">Leggi la notizia →</a></article>`).join('');
+      $('#project-grid').innerHTML = data.projects
+        .map((item, index) => {
+          return `<article class="project-card">
+            <div class="project-icon" aria-hidden="true">${escapeHtml(item.icon)}</div>
+            <span>==0${index + 1}</span>
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.description)}</p>
+            <a class ="project-footer arrow-link" href="#contatti">Approfondisci</a>
+        </article>`
+        })
+        .join('');
+      $('#news-grid').innerHTML = data.news.map(item => `<article><div class="news-art" aria-hidden="true"><span>${escapeHtml(item.category)}</span></div><div class="news-meta"><span>${new Intl.DateTimeFormat('it-IT',{day:'2-digit',month:'long',year:'numeric'}).format(new Date(`${item.date}T12:00:00`))}</span><span>${escapeHtml(item.category)}</span></div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p><a class ="arrow-link" href="#contatti">Leggi la notizia</a></article>`).join('');
       $('#document-list').innerHTML = data.documents.map((item, index) => `<a href="${escapeHtml(item.url)}"><span><b>0${index + 1}</b> ${escapeHtml(item.title)}</span><em>${escapeHtml(item.type)} ↓</em></a>`).join('');
     } catch (error) {
       ['#project-grid','#news-grid','#document-list'].forEach(selector => { const node = $(selector); if (node) node.innerHTML = '<p class="loading-error">Contenuti non disponibili. Avvia il sito tramite un server HTTP locale.</p>'; });
