@@ -355,7 +355,12 @@ h3 {
 	padding: 8px;
 }
 
+.arrow-link::after {
+	content: " \2192"; /* Unicode for right arrow */
+}
+
 .arrow-link:hover {
+	color: var(--ink)!important;
 	background-color: var(--yellow);
 }
 
