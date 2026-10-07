@@ -22,7 +22,7 @@
         .join('');
       $('#news-grid').innerHTML = data.news
         .map((item, index) => {
-          return `<article>
+          return `<article class="news-card">
             <div class="news-art" aria-hidden="true">
               <span>${escapeHtml(item.category)}</span></div>
             <div class="news-meta">
@@ -31,7 +31,7 @@
             </div>
             <h3>${escapeHtml(item.title)}</h3>
             <p>${escapeHtml(item.summary)}</p>
-            <a class ="arrow-link" href="#contatti">Leggi la notizia</a>
+            <a class ="news-footer arrow-link" href="#contatti">Leggi la notizia</a>
           </article>`
          })
         .join('');
