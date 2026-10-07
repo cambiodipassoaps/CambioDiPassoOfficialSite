@@ -20,8 +20,29 @@
         </article>`
         })
         .join('');
-      $('#news-grid').innerHTML = data.news.map(item => `<article><div class="news-art" aria-hidden="true"><span>${escapeHtml(item.category)}</span></div><div class="news-meta"><span>${new Intl.DateTimeFormat('it-IT',{day:'2-digit',month:'long',year:'numeric'}).format(new Date(`${item.date}T12:00:00`))}</span><span>${escapeHtml(item.category)}</span></div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.summary)}</p><a class ="arrow-link" href="#contatti">Leggi la notizia</a></article>`).join('');
-      $('#document-list').innerHTML = data.documents.map((item, index) => `<a href="${escapeHtml(item.url)}"><span><b>0${index + 1}</b> ${escapeHtml(item.title)}</span><em>${escapeHtml(item.type)} ↓</em></a>`).join('');
+      $('#news-grid').innerHTML = data.news
+        .map((item, index) => {
+          return `<article>
+            <div class="news-art" aria-hidden="true">
+              <span>${escapeHtml(item.category)}</span></div>
+            <div class="news-meta">
+              <span>${new Intl.DateTimeFormat('it-IT',{day:'2-digit',month:'long',year:'numeric'}).format(new Date(`${item.date}T12:00:00`))}</span>
+              <span>${escapeHtml(item.category)}</span>
+            </div>
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.summary)}</p>
+            <a class ="arrow-link" href="#contatti">Leggi la notizia</a>
+          </article>`
+         })
+        .join('');
+      $('#document-list').innerHTML = data.documents
+        .map((item, index) => {
+          return `<a href="${escapeHtml(item.url)}">
+            <span><b>0${index + 1}</b> ${escapeHtml(item.title)}</span>
+            <em>${escapeHtml(item.type)} ↓</em>
+          </a>`
+        })
+        .join('');
     } catch (error) {
       ['#project-grid','#news-grid','#document-list'].forEach(selector => { const node = $(selector); if (node) node.innerHTML = '<p class="loading-error">Contenuti non disponibili. Avvia il sito tramite un server HTTP locale.</p>'; });
       console.error('Impossibile caricare content.json', error);
