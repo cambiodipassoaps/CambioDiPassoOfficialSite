@@ -52,7 +52,7 @@
 
 
   /* Brand colors on hover */
-  .social-icons a:hover          { transform: translateY(-15px); }
+  .social-icons a:hover          { transform: translateY(-10px); }
   .social-icons a.x:hover        { color: #fff; background: #e85d52; }
   .social-icons a.facebook:hover { color: #fff; background: #e85d52; }
   .social-icons a.instagram:hover{ color: #fff; background: #e85d52; }
