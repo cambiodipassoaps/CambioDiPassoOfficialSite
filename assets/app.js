@@ -13,7 +13,7 @@
         .map((item, index) => {
           return `<article class="project-card">
             <div class="project-icon" aria-hidden="true">${escapeHtml(item.icon)}</div>
-            <span>==0${index + 1}</span>
+            <span>0${index + 1}</span>
             <h3>${escapeHtml(item.title)}</h3>
             <p>${escapeHtml(item.description)}</p>
             <a class ="project-footer arrow-link" href="#contatti">Approfondisci</a>
