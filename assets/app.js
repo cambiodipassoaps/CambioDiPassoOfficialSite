@@ -11,18 +11,18 @@
       const data = await response.json();
       $('#project-grid').innerHTML = data.projects
         .map((item, index) => {
-          return `<article class="project-card">
+          return `<article class="content-card">
             <div class="project-icon" aria-hidden="true">${escapeHtml(item.icon)}</div>
             <span>0${index + 1}</span>
             <h3>${escapeHtml(item.title)}</h3>
             <p>${escapeHtml(item.description)}</p>
-            <a class ="project-footer arrow-link" href="#contatti">Approfondisci</a>
+            <a class ="content-footer arrow-link" href="#contatti">Approfondisci</a>
         </article>`
         })
         .join('');
       $('#news-grid').innerHTML = data.news
         .map((item, index) => {
-          return `<article class="news-card">
+          return `<article class="content-card">
             <div class="news-art" aria-hidden="true">
               <span>${escapeHtml(item.category)}</span></div>
             <div class="news-meta">
@@ -31,7 +31,7 @@
             </div>
             <h3>${escapeHtml(item.title)}</h3>
             <p>${escapeHtml(item.summary)}</p>
-            <a class ="news-footer arrow-link" href="#contatti">Leggi la notizia</a>
+            <a class ="content-footer arrow-link" href="#contatti">Leggi la notizia</a>
           </article>`
          })
         .join('');

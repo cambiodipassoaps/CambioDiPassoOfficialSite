@@ -1,0 +1,70 @@
+/* ~~~ GRID PROJECTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.projects {
+	background: var(--white);
+}
+
+.content-grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+}
+
+.content-card {
+	display: flex;
+	flex-direction: column;
+	min-height: 360px;
+	border: 1px solid var(--line);
+	padding: 35px;
+	transition: .2s;
+}
+
+.content-card:hover {
+	/*transform: translateY(-5px);*/
+	border-color: var(--teal);
+}
+
+/*
+.project-grid {
+	gap: 20px;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	min-height: 360px;
+	border: 1px solid var(--line);
+	padding: 35px;
+	transition: .2s;
+}
+*/
+
+.content-footer {
+  /* Read More link goes here */
+  margin-top: auto;
+}
+
+
+
+
+.project-icon {
+	font-size: 42px;
+	color: var(--teal);
+	margin-bottom: 40px;
+}
+
+.project-card>span {
+	font-size: 12px;
+	color: #748286;
+}
+
+.project-card h3 {
+	font-size: 27px;
+	margin: 10px 0;
+}
+
+.project-card a {
+	margin-top: auto;
+	text-decoration: none;
+	font-weight: 700;
+}

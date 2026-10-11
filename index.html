@@ -7,15 +7,20 @@
   <meta name="description" content="Cambio di Passo APS: diritti, informazione e progetti per persone con pluridisabilità, famiglie e comunità a Pisa.">
   <meta name="theme-color" content="#086f75">
   <title>Cambio di Passo APS · Persone, diritti, possibilità</title>
-  <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" href="assets/static.css">
-  <link rel="stylesheet" href="assets/social-styles.css">
-  <script src="assets/app.js" defer></script>
+  <!-- css files -->
+  <link rel="stylesheet" href="assets/css/static.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/news.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
+  <link rel="stylesheet" href="assets/css/social-styles.css">
+  <!-- icons -->
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/fontawesome.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/solid.min.css" crossorigin="anonymous">
+  <!-- scripts -->
+  <script src="assets/app.js" defer></script>
 </head>
 
 <body>
@@ -47,6 +52,7 @@
       </nav>
     </div>
   </header>
+
   <main id="contenuto">
     <section class="hero">
       <img src="assets/hero-community.png" alt="Persone con e senza disabilità collaborano in un orto accessibile">
@@ -103,7 +109,7 @@
             <h2>Azioni che diventano possibilità.</h2></div>
           <p>Costruiamo risposte insieme alle persone e alla rete territoriale.</p>
         </div>
-        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+        <div id="project-grid" class="content-grid" aria-live="polite"></div>
       </div>
     </section>
 
@@ -124,26 +130,32 @@
             <p class="eyebrow blue">Ultime notizie</p>
             <h2>Succede nella nostra rete.</h2></div>
         </div>
-        <div id="news-grid" class="news-grid" aria-live="polite"></div>
+        <div id="news-grid" class="content-grid" aria-live="polite"></div>
       </div>
     </section>
+
     <section id="trasparenza" class="transparency section">
       <div class="shell two-col">
         <div>
           <p class="eyebrow teal">Trasparenza</p>
           <h2>Chiarezza, sempre.</h2>
+          <h2 style="visibility:hidden;">Cominciamo da una conversazione.</h2>
           <p>Documenti e informazioni sull'associazione, accessibili a tutte e tutti.</p>
         </div>
         <div id="document-list" class="doc-list"></div>
       </div>
     </section>
+
     <section id="contatti" class="contact section">
-      <div class="shell contact-grid">
+      <div class="shell two-col">
         <div>
           <p class="eyebrow">Contattaci</p>
           <h2>Cominciamo da una conversazione.</h2>
           <p>Hai una richiesta, vuoi diventare volontario o proporre una collaborazione? Scrivici.</p>
-          <div class="contact-details"><span>E-mail</span><a href="mailto:cambiodipassoaps@gmail.com">cambiodipassoaps@gmail.com</a><span>Dove siamo</span>
+          <div class="contact-details">
+            <span>E-mail</span>
+            <a href="mailto:cambiodipassoaps@gmail.com">cambiodipassoaps@gmail.com</a>
+            <span>Dove siamo</span>
             <p>Via Fratelli Antoni, 56121 Pisa</p>
           </div>
         </div>
