@@ -24,29 +24,10 @@
 	border-color: var(--teal);
 }
 
-/*
-.news-grid {
-	gap: 28px;
-}
-
-.news-card {
-	display: flex;
-	flex-direction: column;
-	min-height: 360px;
-	border: 1px solid var(--line);
-	padding: 35px;
-	transition: .2s;
-}
-*/
-
 .content-footer {
   /* Read More link goes here */
   margin-top: auto;
 }
-
-
-
-
 
 .news-grid article {
 	background: #fff;
@@ -103,4 +84,3 @@
 	text-decoration: none;
 	font-weight: 700;
 }
-

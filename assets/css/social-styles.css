@@ -25,46 +25,33 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 2.25rem;
   }
 
   .social-icons a {
     display: inline-flex;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     color: var(--ink);
     background: var(--yellow);
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    font-size: 1.5rem;
   }
-
-  /* Brand colors on hover */
-  /*.social-icons a:hover { transform: translateY(-3px); }*/
-/*  .social-icons a.x:hover        { color: #fff; background: #000;    }
-  .social-icons a.facebook:hover { color: #fff; background: #1877f2; }
-  .social-icons a.instagram:hover{ color: #fff; background: #e4405f; }
-  .social-icons a.linkedin:hover { color: #fff; background: #0a66c2; }
-  .social-icons a.youtube:hover  { color: #fff; background: #ff0000; }
-  .social-icons a.github:hover   { color: #fff; background: #333;    }*/
-
 
 
   /* Brand colors on hover */
   .social-icons a:hover          { transform: translateY(-10px); }
-  .social-icons a.x:hover        { color: #fff; background: #e85d52; }
-  .social-icons a.facebook:hover { color: #fff; background: #e85d52; }
-  .social-icons a.instagram:hover{ color: #fff; background: #e85d52; }
-  .social-icons a.linkedin:hover { color: #fff; background: #e85d52; }
-  .social-icons a.youtube:hover  { color: #fff; background: #e85d52; }
-  .social-icons a.github:hover   { color: #fff; background: #e85d52; }
+  .social-icons a.social-x:hover        { color: var(--white); background: var(--coral) }
+  .social-icons a.social-facebook:hover { color: var(--white); background: var(--coral) }
+  .social-icons a.social-instagram:hover{ color: var(--white); background: var(--coral) }
+  .social-icons a.social-linkedin:hover { color: var(--white); background: var(--coral) }
+  .social-icons a.social-youtube:hover  { color: var(--white); background: var(--coral) }
+  .social-icons a.social-github:hover   { color: var(--white); background: var(--coral) }
 
-  .social-icons svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-  }
 
   .copyright {
     font-size: 0.85rem;
